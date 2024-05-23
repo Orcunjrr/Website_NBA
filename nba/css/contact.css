@@ -1,0 +1,329 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: white;
+    background: #1f2641;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: white;
+}
+
+#nbaLogo {
+    width: 100px;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all 400ms ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-primary {
+    background: #f75842;
+    color: white;
+}
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+
+/* navbar style'i js ile değiştirme */
+
+.window-scroll {
+    background: #6c63ff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: all 400ms ease;
+}
+
+.nav__menu a:hover {
+    color: #424890;
+
+}
+
+/* ---------------------- */
+
+.contact__container {
+    background: #db0b0b5d;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+.contact__aside{
+    background: #700000;
+    padding: 4rem;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 10rem;
+}
+
+.aside__image {
+    width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.contact__aside h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact__aside p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact__details li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact__socials {
+    font-size: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.contact__socials a {
+    background: #102b5c;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    transition: all 400ms ease;
+}
+
+
+.contact__socials a:hover {
+    background: transparent;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input[type="text"] {
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #817b29;
+    color: rgb(0, 0, 0);
+}
+
+input::placeholder {
+    color: black;
+}
+
+textarea::placeholder {
+    color: black;
+}
+
+.contact__form .btn { 
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* ---------------- responsive for tablets -------------------- */
+
+@media screen and (max-width: 1024px) {
+
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+/* ---------------------- responsive settings for phones ------------------- */
+
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contact__form {
+        margin: 0 1.5rem 3rem;
+    }
+    
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background: #2e3265;
+    padding-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+.footer_container > div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+    margin: 0 0 2rem;
+}
+
+footer ul li {
+    margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.footer_copyright {
+    display: flex;
+    text-align: center;
+    margin-top: 0.2rem;
+    padding: 1.2rem 0;
+    border-top: 1px solid #424890;
+}
+
+/* --------------------------- */
+

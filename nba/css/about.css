@@ -1,0 +1,162 @@
+/* --------------------------- */
+
+.about__achievements {
+    margin-top: 3rem;
+}
+
+.about__achievements-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.about__achievements-right > p {
+    margin: 1.6ram 0 2.5rem;
+}
+
+.achievements__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.achievement__card {
+    background: #0004ff;
+    padding: 1.6rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: all 400ms ease;
+}
+.achievement__card:hover {
+    background: #8400ff;
+    box-shadow: 0 3rem 3rem rgba(rgb(8, 7, 7), rgb(10, 9, 9), rgb(9, 9, 10), 0.3);
+}
+
+.achievement__icon {
+    background: #174b69;
+    padding: .6rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 1.9rem;
+    font-size: 2rem;
+}
+
+.achievement__card:nth-child(2) .achievement__icon {
+    background: #17f802;
+}
+
+.achievement__card:nth-child(3) .achievement__icon {
+    background: rgb(255, 0, 255);
+    width: 3.6rem;
+}
+
+.achievement__card:nth-child(1) .achievement__icon {
+    background: rgb(10, 5, 4);
+}
+
+.achievement__card p {
+    margin-top: 1rem;
+}
+
+#nbaLogo {
+    width: 100px;
+    height: auto;
+}
+
+/* --------------------- */
+
+.nba {
+    background: rgb(75, 21, 21);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 6);
+}
+
+.nba__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.nba__member {
+    background: #4f277c;
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+    position: relative;
+}
+
+.nba__member:hover {
+    background: transparent;
+    border-color: #2a2994;
+}
+
+.nba__member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.nba__member-info p {
+    color: lightgoldenrodyellow;
+}
+
+.nba__member-socials {
+    position: absolute;
+    top: 63%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #5f2626;
+    border-radius: 1rem;
+    box-shadow: -2rem 0 2rem rgba(10, 5, 4, 0.5);
+}
+
+.nba__member-socials a {
+    padding: 1rem;
+}
+
+/* ------------------ RESPONSIVE FOR TABLETS ------------------------ */
+
+@media screen and (max-width: 1024px) {
+    .about__achievements{
+        margin-top: 2rem;
+    }
+
+    .about__achievements-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about__achievements-left{
+        width: 80%;
+        margin: auto;
+    }
+
+    .nba__container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .nba__member {
+        padding: 1rem;
+    }
+}
+
+/* ---------------------- RESPONSIVE FOR PHONES ---------------- */
+
+@media screen and (max-width: 610px) {
+    .achievements__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .nba__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.79rem;
+    }
+
+    .nba__member {
+        padding: 0;
+    }
+
+    .nba__member p {
+        margin-bottom: 1.5rem;
+    }
+}
